@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import EmgForm from "@/components/EmgForm";
 import Benefits from "@/components/Benefits";
 import Footer from "@/components/Footer";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaGoogle } from "react-icons/fa";
 import { ChevronLeft } from "lucide-react";
 
 export default function Home() {
@@ -75,6 +75,61 @@ export default function Home() {
                   <h3 className="font-bold text-lg mb-2">בחינות מדוקדקות ובדיקות נוספות</h3>
                   <p className="text-gray-600">נבצע את כל הבדיקות הנדרשות כדי להבטיח את בריאותך ולספק מידע מדויק</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About MedAssist Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">אודות MEDASSIST</h2>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center">
+                    <FaGoogle className="w-6 h-6 text-blue-600" />
+                    <span className="text-2xl font-bold mx-2">4.8</span>
+                  </div>
+                  <div className="flex">
+                    {"★".repeat(5).split("").map((star, i) => (
+                      <span key={i} className="text-yellow-400">
+                        {star}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="text-gray-600">(334 reviews)</span>
+                </div>
+                <p className="text-gray-600 mb-4">Hashalom St 11, Tel-Aviv-Yafo</p>
+                <p className="text-gray-700">
+                  Medassist היא חברת בריאות דיגיטלית המובילה בישראל שכבר שנים מספקת פתרון רפואי זמין סיוע רפואי זמין בקביעת תורים לבדיקות רפואיות שונות. כיום אנחנו מציעים פתרון למטופלים רבים בתחום המיקרוביולוגיה קבע ובדיקות שגרתיות שהם צורכי שירות מיידי.
+                </p>
+              </div>
+              <div>
+                <img 
+                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80"
+                  alt="Medical Facility"
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Appointment Call Section */}
+        <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-400 text-white -mx-4">
+          <div className="container mx-auto px-4">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold mb-8">תור פרטי לבדיקת EMG</h2>
+              <div className="mb-8">
+                <a href="tel:03-772-4225" className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-xl font-bold">
+                  03-772-4225
+                </a>
+              </div>
+              <div className="space-y-2 text-lg">
+                <p>✓ חיוג מהיר 24 שעות מענה טלפוני</p>
+                <p>✓ ניתן לקבל חזרה טלפונית בהתאם לבקשתך</p>
+                <p>✓ פגישה במרפאה ע״י נוירולוג מומחה</p>
               </div>
             </div>
           </div>
