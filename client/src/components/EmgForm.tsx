@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 
 export default function EmgForm() {
   const { toast } = useToast();
-  
+
   const form = useForm<InsertAppointment>({
     resolver: zodResolver(insertAppointmentSchema),
     defaultValues: {
@@ -53,65 +53,68 @@ export default function EmgForm() {
     <Form {...form}>
       <form 
         onSubmit={form.handleSubmit((data) => mutation.mutate(data))}
-        className="space-y-4 bg-white p-6 rounded-lg shadow-lg"
+        className="bg-white rounded-lg shadow-lg p-8"
       >
         <h2 className="text-2xl font-bold text-center mb-6">קביעת תור פרטי לבדיקת EMG</h2>
-        
-        <FormField
-          control={form.control}
-          name="fullName"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input placeholder="שם מלא" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <p className="text-gray-600 text-center mb-8">לקבוע תור לבדיקת EMG ולדבר עם הרופאים שלנו</p>
 
-        <FormField
-          control={form.control}
-          name="phone"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input placeholder="טלפון" type="tel" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <div className="space-y-4">
+          <FormField
+            control={form.control}
+            name="fullName"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input placeholder="שם מלא" className="text-right" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
 
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input placeholder="דוא״ל" type="email" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input placeholder="טלפון" type="tel" className="text-right" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
 
-        <FormField
-          control={form.control}
-          name="details"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Textarea placeholder="פרטי הבדיקה" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input placeholder="דוא״ל" type="email" className="text-right" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="details"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Textarea placeholder="פרטי הבדיקה" className="text-right min-h-[100px]" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
 
         <Button 
           type="submit" 
-          className="w-full bg-blue-600 hover:bg-blue-700"
+          className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-lg py-6"
           disabled={mutation.isPending}
         >
           {mutation.isPending ? "שולח..." : "שליחה"}

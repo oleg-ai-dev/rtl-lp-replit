@@ -10,14 +10,14 @@ export default function Header() {
           alt="MEDASSIST" 
           className="h-8"
         />
-        
-        <a href="tel:03-301-5074">
+
+        <a href="tel:03-772-4225">
           <Button 
             variant="secondary"
             className="bg-orange-500 hover:bg-orange-600 text-white flex items-center gap-2"
           >
             <Phone className="w-4 h-4" />
-            03-301-5074
+            03-772-4225
           </Button>
         </a>
       </div>

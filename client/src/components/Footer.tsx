@@ -9,14 +9,14 @@ export default function Footer() {
             className="h-6"
           />
         </div>
-        
+
         <div className="mt-6 text-center text-gray-600">
           <a href="https://wa.me/972533015074" className="hover:text-blue-600">
             WhatsApp: 053-301-5074
           </a>
           <span className="mx-2">|</span>
-          <a href="tel:03-301-5074" className="hover:text-blue-600">
-            טלפון: 03-301-5074
+          <a href="tel:03-772-4225" className="hover:text-blue-600">
+            טלפון: 03-772-4225
           </a>
         </div>
       </div>
