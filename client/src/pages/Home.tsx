@@ -15,8 +15,8 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <img 
-                  src="/EMG General 1.jpg" 
+                <img
+                  src="/images/EMG-General-1.jpg"
                   alt="EMG בדיקת"
                   className="rounded-2xl shadow-2xl w-full"
                 />
@@ -89,24 +89,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Ratings & About Section */}
+        {/* Google Reviews Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">אודות MEDASSIST</h2>
-                <p className="text-gray-600 mb-2">Hashalom St 11, Tel-Aviv-Yafo</p>
-                <p className="text-gray-700 leading-relaxed mb-8">
-                  Medassist היא חברת בריאות דיגיטלית המובילה בישראל שכבר שנים מספקת פתרון רפואי זמין.
-                  סיוע רפואי זמין בקביעת תורים לבדיקות רפואיות שונות בנוחות מירבית.
-                  הרופאים והצוות שלנו בהתאם למיקרוביולוגיה קבע ובדיקות שגרתיות שהם צריכים שירות מיידי.
-                  תקנותי כמו חיים.
-                </p>
-                <div className="bg-blue-50 p-6 rounded-xl">
-                  <p className="text-gray-600">לכל אחד מספק פתרון מהיר, פשוט אלינו מגדירים כמה טיפול מסייע.
-                     נצרן מחלקות סטנד לישיר המשתמשי בצורה יעילה.</p>
-                </div>
-              </div>
               <div>
                 <div className="flex flex-col">
                   <h2 className="text-3xl font-bold mb-6">המלצת לקוחות בגוגל</h2>
@@ -121,29 +107,50 @@ export default function Home() {
                     </div>
                     <span className="text-gray-600">334 reviews ©</span>
                   </div>
-                  <EmgForm />
+                </div>
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold mb-6">אודות MEDASSIST</h2>
+                <p className="text-gray-600 mb-2">Hashalom St 11, Tel-Aviv-Yafo</p>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Medassist היא חברת בריאות דיגיטלית המובילה בישראל שכבר שנים מספקת פתרון רפואי זמין.
+                  סיוע רפואי זמין בקביעת תורים לבדיקות רפואיות שונות בנוחות מירבית.
+                  הרופאים והצוות שלנו בהתאם למיקרוביולוגיה קבע ובדיקות שגרתיות שהם צריכים שירות מיידי.
+                  תקנותי כמו חיים.
+                </p>
+                <div className="bg-blue-50 p-6 rounded-xl">
+                  <p className="text-gray-600">לכל אחד מספק פתרון מהיר, פשוט אלינו מגדירים כמה טיפול מסייע.
+                     נצרן מחלקות סטנד לישיר המשתמשי בצורה יעילה.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-blue-600 to-blue-400 py-16 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8">EMG תור פרטי לבדיקת</h2>
-            <div className="mb-8">
-              <a 
-                href="tel:03-772-4225" 
-                className="inline-block bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-xl text-xl font-bold transition-colors"
-              >
-                03-772-4225
-              </a>
-            </div>
-            <div className="space-y-2 text-lg max-w-2xl mx-auto">
-              <p>✓ חיוג מהיר 24 שעות מענה טלפוני</p>
-              <p>✓ ניתן לקבל חזרה טלפונית בהתאם לבקשתך</p>
-              <p>✓ פגישה במרפאה ע״י נוירולוג מומחה</p>
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="text-center md:text-right">
+                <h2 className="text-3xl font-bold mb-8">EMG תור פרטי לבדיקת</h2>
+                <div className="mb-8">
+                  <a
+                    href="tel:03-772-4225"
+                    className="inline-block bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-xl text-xl font-bold transition-colors"
+                  >
+                    03-772-4225
+                  </a>
+                </div>
+                <div className="space-y-2 text-lg">
+                  <p>✓ חיוג מהיר 24 שעות מענה טלפוני</p>
+                  <p>✓ ניתן לקבל חזרה טלפונית בהתאם לבקשתך</p>
+                  <p>✓ פגישה במרפאה ע״י נוירולוג מומחה</p>
+                </div>
+              </div>
+              <div>
+                <EmgForm />
+              </div>
             </div>
           </div>
         </section>
