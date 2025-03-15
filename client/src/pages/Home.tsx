@@ -3,12 +3,13 @@ import EmgForm from "@/components/EmgForm";
 import Benefits from "@/components/Benefits";
 import Footer from "@/components/Footer";
 import { FaWhatsapp } from "react-icons/fa";
+import { ChevronLeft } from "lucide-react";
 
 export default function Home() {
   return (
     <div dir="rtl" className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
-      
+
       <main className="container mx-auto px-4">
         {/* Top Form Section */}
         <section className="py-12">
@@ -40,6 +41,44 @@ export default function Home() {
         </section>
 
         <Benefits />
+
+        {/* Procedure Steps Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">מהלך הבדיקה</h2>
+            <div className="space-y-8 max-w-3xl mx-auto">
+              <div className="flex items-start gap-4 p-6 bg-blue-50 rounded-lg">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <ChevronLeft className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">בדיקת EMG היא בדיקה אלקטרופיזיולוגית של העצבים שבודקת את המהירות</h3>
+                  <p className="text-gray-600">המושפעת מבעיות בתוך השריר ומבעיות בתוך העצבים המוליכים אותו</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-blue-50 rounded-lg">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <ChevronLeft className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">בדיקה נעשית בהתאם לתקנות הבטיחות</h3>
+                  <p className="text-gray-600">הבדיקה מתואמת עם מומחי נוירולוגיה ומתבצעת תחת פיקוח רפואי מלא</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-blue-50 rounded-lg">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <ChevronLeft className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">בחינות מדוקדקות ובדיקות נוספות</h3>
+                  <p className="text-gray-600">נבצע את כל הבדיקות הנדרשות כדי להבטיח את בריאותך ולספק מידע מדויק</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Bottom Form Section */}
         <section className="py-16">
