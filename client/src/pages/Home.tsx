@@ -66,17 +66,48 @@ export default function Home() {
         </section>
 
         {/* EMG Procedure Section */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">מהלך הבדיקת EMG</h2>
-            <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl shadow-lg p-8 text-white">
-              <div className="prose max-w-none">
-                <p className="mb-6">
-                  הבדיקה מתבצעת על ידי רופא מומחה בנוירולוגיה בעל ניסיון רב בביצוע בדיקות EMG. במהלך הבדיקה נבדקת מהירות הולכת העצב באמצעות אלקטרודות המוצמדות לעור.
-                </p>
-                <p>
-                  הבדיקה אורכת כ-30 דקות והיא אינה מצריכה הכנה מיוחדת. לאחר הבדיקה המטופל יכול לחזור לפעילות רגילה. תוצאות הבדיקה מתקבלות מיד בסיום הבדיקה והרופא מסביר למטופל את המשמעות שלהן.
-                </p>
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl mx-auto">
+              <div className="flex gap-4 items-start">
+                <div className="bg-blue-100 p-3 rounded-full shrink-0">
+                  <Plus className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">בדיקת EMG היא בדיקה אלקטרופיזיולוגית</h3>
+                  <p className="text-gray-600">הבדיקה מתבצעת על ידי רופא מומחה בנוירולוגיה בעל ניסיון רב בביצוע בדיקות EMG</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="bg-blue-100 p-3 rounded-full shrink-0">
+                  <Plus className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">מהירות הולכת העצב</h3>
+                  <p className="text-gray-600">במהלך הבדיקה נבדקת מהירות הולכת העצב באמצעות אלקטרודות המוצמדות לעור</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="bg-blue-100 p-3 rounded-full shrink-0">
+                  <Plus className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">משך הבדיקה</h3>
+                  <p className="text-gray-600">הבדיקה אורכת כ-30 דקות והיא אינה מצריכה הכנה מיוחדת</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="bg-blue-100 p-3 rounded-full shrink-0">
+                  <Plus className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">תוצאות מיידיות</h3>
+                  <p className="text-gray-600">תוצאות הבדיקה מתקבלות מיד בסיום והרופא מסביר למטופל את המשמעות שלהן</p>
+                </div>
               </div>
             </div>
           </div>
