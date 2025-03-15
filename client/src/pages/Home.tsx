@@ -16,7 +16,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
                 <img 
-                  src="/EMG General 1.jpg"
+                  src="/EMG General 1.jpg" 
                   alt="EMG בדיקת"
                   className="rounded-2xl shadow-2xl w-full"
                 />
@@ -94,12 +94,13 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">MEDASSIST אודות</h2>
+                <h2 className="text-3xl font-bold mb-6">אודות MEDASSIST</h2>
                 <p className="text-gray-600 mb-2">Hashalom St 11, Tel-Aviv-Yafo</p>
                 <p className="text-gray-700 leading-relaxed mb-8">
                   Medassist היא חברת בריאות דיגיטלית המובילה בישראל שכבר שנים מספקת פתרון רפואי זמין.
                   סיוע רפואי זמין בקביעת תורים לבדיקות רפואיות שונות בנוחות מירבית.
                   הרופאים והצוות שלנו בהתאם למיקרוביולוגיה קבע ובדיקות שגרתיות שהם צריכים שירות מיידי.
+                  תקנותי כמו חיים.
                 </p>
                 <div className="bg-blue-50 p-6 rounded-xl">
                   <p className="text-gray-600">לכל אחד מספק פתרון מהיר, פשוט אלינו מגדירים כמה טיפול מסייע.
@@ -107,17 +108,21 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl font-bold mb-6">המלצת לקוחות בגוגל</h2>
-                <div className="flex items-center gap-4 mb-8">
-                  <span className="text-3xl font-bold">4.8</span>
-                  <div className="flex text-yellow-400 text-2xl">
-                    {"★".repeat(5).split("").map((star, i) => (
-                      <span key={i}>{star}</span>
-                    ))}
+                <div className="flex flex-col">
+                  <h2 className="text-3xl font-bold mb-6">המלצת לקוחות בגוגל</h2>
+                  <div className="text-center mb-8">
+                    <div className="mb-4">
+                      <span className="text-4xl font-bold">4.8</span>
+                    </div>
+                    <div className="flex justify-center text-yellow-400 text-2xl mb-2">
+                      {"★".repeat(5).split("").map((star, i) => (
+                        <span key={i}>{star}</span>
+                      ))}
+                    </div>
+                    <span className="text-gray-600">334 reviews ©</span>
                   </div>
-                  <span className="text-gray-600">334 reviews ©</span>
+                  <EmgForm />
                 </div>
-                <EmgForm />
               </div>
             </div>
           </div>
