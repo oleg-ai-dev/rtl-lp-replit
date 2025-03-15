@@ -16,9 +16,9 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
                 <img 
-                  src="/emg-procedure.jpg"
+                  src="/EMG General 1.jpg"
                   alt="EMG בדיקת"
-                  className="rounded-2xl shadow-2xl"
+                  className="rounded-2xl shadow-2xl w-full"
                 />
               </div>
               <div className="order-1 md:order-2">
@@ -89,28 +89,34 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Ratings & About */}
+        {/* Ratings & About Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h2 className="text-3xl font-bold mb-6">MEDASSIST אודות</h2>
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-2xl font-bold">4.8</span>
-                  <div className="flex text-yellow-400">
+                <p className="text-gray-600 mb-2">Hashalom St 11, Tel-Aviv-Yafo</p>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Medassist היא חברת בריאות דיגיטלית המובילה בישראל שכבר שנים מספקת פתרון רפואי זמין.
+                  סיוע רפואי זמין בקביעת תורים לבדיקות רפואיות שונות בנוחות מירבית.
+                  הרופאים והצוות שלנו בהתאם למיקרוביולוגיה קבע ובדיקות שגרתיות שהם צריכים שירות מיידי.
+                </p>
+                <div className="bg-blue-50 p-6 rounded-xl">
+                  <p className="text-gray-600">לכל אחד מספק פתרון מהיר, פשוט אלינו מגדירים כמה טיפול מסייע.
+                     נצרן מחלקות סטנד לישיר המשתמשי בצורה יעילה.</p>
+                </div>
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold mb-6">המלצת לקוחות בגוגל</h2>
+                <div className="flex items-center gap-4 mb-8">
+                  <span className="text-3xl font-bold">4.8</span>
+                  <div className="flex text-yellow-400 text-2xl">
                     {"★".repeat(5).split("").map((star, i) => (
                       <span key={i}>{star}</span>
                     ))}
                   </div>
-                  <span className="text-gray-600">334 reviews</span>
+                  <span className="text-gray-600">334 reviews ©</span>
                 </div>
-                <p className="text-gray-600 mb-2">Hashalom St 11, Tel-Aviv-Yafo</p>
-                <p className="text-gray-700 leading-relaxed">
-                  Medassist היא חברת בריאות דיגיטלית המובילה בישראל שכבר שנים מספקת פתרון רפואי זמין.
-                  סיוע רפואי זמין בקביעת תורים לבדיקות רפואיות שונות.
-                </p>
-              </div>
-              <div>
                 <EmgForm />
               </div>
             </div>
