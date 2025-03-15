@@ -14,11 +14,11 @@ export default function Home() {
         <section className="relative py-16 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1">
+              <div className="order-2 md:order-1 h-[600px]">
                 <img
                   src="/images/EMG-General-1.jpg"
                   alt="EMG בדיקת"
-                  className="rounded-2xl shadow-2xl w-full"
+                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
                 />
               </div>
               <div className="order-1 md:order-2">
@@ -33,57 +33,50 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 p-8 rounded-2xl text-white shadow-xl">
-                <h3 className="text-xl font-bold mb-4">המחיר כרטיסים פרטיים</h3>
-                <p>לכל צוות הרופאים שלנו בהתאם לתנאי הרישיון של המוסד הרפואי</p>
+                <h3 className="text-xl font-bold mb-4">פענוח מהיר</h3>
+                <p>פענוח מהיר ובמקום של בדיקת ה EMG על ידי נוירולוג מומחה.</p>
               </div>
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-2xl text-white shadow-xl">
-                <h3 className="text-xl font-bold mb-4">ניתן לפנות אלינו גם ללא המתנה</h3>
-                <p>אנחנו זמינים בבקשה מיוחדת לבדיקת EMG ואם המקרה דחוף ולא סובל דיחוי</p>
+                <h3 className="text-xl font-bold mb-4">ניתן לפנות אלינו גם ללא הפניה</h3>
+                <p>אנחנו יכולים לסייע בקבלת ההפניה לבדיקת EMG ללא המתנה לתור עם הרופא.</p>
               </div>
               <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-8 rounded-2xl text-white shadow-xl">
-                <h3 className="text-xl font-bold mb-4">פגישת מחיר</h3>
-                <p>פגישה מהירה תוך 24 שעות מרגע יצירת הקשר</p>
+                <h3 className="text-xl font-bold mb-4">החזר מביטוחים פרטיים</h3>
+                <p>ניתן לקבל החזר כספי על הבדיקה מביטוח הבריאות הפרטי, בהתאם לתנאי הפוליסה של המבוטח.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Procedure Steps */}
+        {/* EMG Test Benefits Section */}
         <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">מהלך הבדיקה</h2>
-            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl mx-auto">
-              <div className="flex gap-4 items-start">
-                <div className="bg-blue-100 p-3 rounded-full shrink-0">
-                  <Plus className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <p className="text-gray-600">בדיקת EMG היא בדיקה אלקטרופיזיולוגית של העצבים שבודקת את המהירות המושפעת מבעיות בתוך השריר ומבעיות בתוך העצבים המוליכים אותו</p>
-                </div>
+            <h2 className="text-3xl font-bold text-center mb-12">היתרונות של בדיקת EMG</h2>
+            <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+              <div className="prose max-w-none">
+                <p className="text-gray-700 mb-6">
+                  בדיקת EMG היא בדיקה אלקטרופיזיולוגית של העצבים. הבדיקה נחשבת לבדיקה חשובה מאוד בתחום הנוירולוגיה והיא מאפשרת לאבחן בעיות בתפקוד העצבים והשרירים.
+                </p>
+                <p className="text-gray-700">
+                  יתרונות הבדיקה הם רבים. אבחון מדויק ומהיר של הבעיה מאפשר התחלת טיפול מוקדם ככל האפשר ומעקב אחר יעילות הטיפול. כמו כן, הבדיקה מסייעת לרופא להחליט על הטיפול המתאים ביותר עבור המטופל.
+                </p>
               </div>
-              <div className="flex gap-4 items-start">
-                <div className="bg-blue-100 p-3 rounded-full shrink-0">
-                  <Plus className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <p className="text-gray-600">בדיקה נעשית בהתאם לתקנות הבטיחות והיא מתואמת עם מומחי נוירולוגיה ומתבצעת תחת פיקוח רפואי מלא</p>
-                </div>
-              </div>
-              <div className="flex gap-4 items-start">
-                <div className="bg-blue-100 p-3 rounded-full shrink-0">
-                  <Plus className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <p className="text-gray-600">הבדיקה נעשית בהתאם לתקנות הבטיחות. מתואמת עם מומחי נוירולוגיה ומתבצעת תחת פיקוח רפואי מלא</p>
-                </div>
-              </div>
-              <div className="flex gap-4 items-start">
-                <div className="bg-blue-100 p-3 rounded-full shrink-0">
-                  <Plus className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <p className="text-gray-600">בחינות מדוקדקות ובדיקות נוספות יבוצעו כדי להבטיח את בריאותך</p>
-                </div>
+            </div>
+          </div>
+        </section>
+
+        {/* EMG Procedure Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">מהלך הבדיקת EMG</h2>
+            <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl shadow-lg p-8 text-white">
+              <div className="prose max-w-none">
+                <p className="mb-6">
+                  הבדיקה מתבצעת על ידי רופא מומחה בנוירולוגיה בעל ניסיון רב בביצוע בדיקות EMG. במהלך הבדיקה נבדקת מהירות הולכת העצב באמצעות אלקטרודות המוצמדות לעור.
+                </p>
+                <p>
+                  הבדיקה אורכת כ-30 דקות והיא אינה מצריכה הכנה מיוחדת. לאחר הבדיקה המטופל יכול לחזור לפעילות רגילה. תוצאות הבדיקה מתקבלות מיד בסיום הבדיקה והרופא מסביר למטופל את המשמעות שלהן.
+                </p>
               </div>
             </div>
           </div>
@@ -126,7 +119,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
 
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-blue-600 to-blue-400 py-16 text-white">
