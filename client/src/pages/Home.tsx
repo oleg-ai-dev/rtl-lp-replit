@@ -36,6 +36,33 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Professional Certification */}
+        <section className="py-12 bg-gradient-to-br from-blue-50 to-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">מומחיות רפואית מוכחת</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">צוות המומחים שלנו כולל נוירולוגים בכירים עם התמחות ספציפית בבדיקות EMG</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-4xl mb-4 text-blue-600">15+</div>
+                <h3 className="font-bold mb-2">שנות ניסיון</h3>
+                <p className="text-gray-600">ניסיון עשיר בביצוע אלפי בדיקות EMG</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-4xl mb-4 text-blue-600">98%</div>
+                <h3 className="font-bold mb-2">שביעות רצון</h3>
+                <p className="text-gray-600">אחוז שביעות רצון גבוה מהמטופלים שלנו</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-4xl mb-4 text-blue-600">24/7</div>
+                <h3 className="font-bold mb-2">זמינות</h3>
+                <p className="text-gray-600">תמיכה וליווי מקצועי לאורך כל הדרך</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Features Grid */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">

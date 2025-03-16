@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import Image from "next/image"; // Import Image component for better image handling
 
 export default function Header() {
   return (
@@ -11,15 +12,24 @@ export default function Header() {
           className="h-10"
         />
 
-        <a href="tel:03-772-4225">
-          <Button 
-            variant="secondary"
-            className="bg-orange-500 hover:bg-orange-600 text-white flex items-center gap-2"
-          >
-            <Phone className="w-4 h-4" />
-            03-772-4225
-          </Button>
-        </a>
+        <div className="flex items-center gap-4"> {/*Added div for better spacing */}
+          <a href="tel:03-772-4225">
+            <Button 
+              variant="secondary"
+              className="bg-orange-500 hover:bg-orange-600 text-white flex items-center gap-2"
+            >
+              <Phone className="w-4 h-4" />
+              03-772-4225
+            </Button>
+          </a>
+          <Image 
+            src="/certification.svg" // Replace with actual image path
+            alt="Professional Certification" 
+            width={50} 
+            height={50} 
+            className="rounded-full" // Add styling as needed.  
+          /> {/* Added image for certification. Adjust src, width, and height*/}
+        </div>
       </div>
     </header>
   );
