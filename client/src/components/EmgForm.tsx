@@ -53,8 +53,9 @@ export default function EmgForm() {
     <Form {...form}>
       <form 
         onSubmit={form.handleSubmit((data) => mutation.mutate(data))}
-        className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-10 max-w-lg mx-auto border border-blue-100"
+        className="glass-card rounded-2xl shadow-2xl p-10 max-w-lg mx-auto border border-blue-100 relative group"
       >
+        <div className="absolute -inset-[1px] bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-10 blur"></div>
         <h2 className="text-3xl font-bold text-center mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-600">קביעת תור פרטי לבדיקת EMG</h2>
         <p className="text-gray-600 text-center mb-8 text-lg">המומחים שלנו מחכים לעזור לך</p>
