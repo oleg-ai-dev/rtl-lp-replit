@@ -3,12 +3,12 @@ import { Phone } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-blue-400 py-4">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+    <header className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-gray-100">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <img 
           src="/medassist-logo.svg" 
           alt="MEDASSIST" 
-          className="h-8"
+          className="h-10"
         />
 
         <a href="tel:03-772-4225">

@@ -11,15 +11,21 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-16 overflow-hidden">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1 h-[600px]">
+        <section className="relative py-24 overflow-hidden bg-gradient-to-b from-blue-50/50 via-white to-white">
+          <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+          <div className="container mx-auto px-4 relative">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="order-2 md:order-1 h-[600px] relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-20 blur-2xl"></div>
                 <img
                   src="/images/EMG-General-1.jpg"
                   alt="EMG בדיקת"
-                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                  className="rounded-2xl shadow-2xl w-full h-full object-cover relative"
                 />
+                <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-6 py-4 rounded-xl shadow-lg">
+                  <p className="text-blue-900 font-semibold">רופאים מומחים מובילים</p>
+                  <p className="text-sm text-gray-600">ניסיון של למעלה מ-15 שנה</p>
+                </div>
               </div>
               <div className="order-1 md:order-2">
                 <EmgForm />

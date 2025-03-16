@@ -53,10 +53,20 @@ export default function EmgForm() {
     <Form {...form}>
       <form 
         onSubmit={form.handleSubmit((data) => mutation.mutate(data))}
-        className="bg-white rounded-2xl shadow-2xl p-8 max-w-lg mx-auto"
+        className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-10 max-w-lg mx-auto border border-blue-100"
       >
-        <h2 className="text-2xl font-bold text-center mb-3">קביעת תור פרטי לבדיקת EMG</h2>
-        <p className="text-gray-600 text-center mb-8">לקבוע תור לבדיקת EMG ולדבר עם הרופאים שלנו</p>
+        <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-10 blur"></div>
+        <h2 className="text-3xl font-bold text-center mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-600">קביעת תור פרטי לבדיקת EMG</h2>
+        <p className="text-gray-600 text-center mb-8 text-lg">המומחים שלנו מחכים לעזור לך</p>
+        <div className="flex items-center justify-center gap-2 mb-8">
+          <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-700 text-sm">
+            <span className="mr-1.5 h-2 w-2 rounded-full bg-green-500"></span>
+            זמינות גבוהה
+          </span>
+          <span className="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">
+            רופאים מומחים
+          </span>
+        </div>
 
         <div className="space-y-6">
           <FormField
