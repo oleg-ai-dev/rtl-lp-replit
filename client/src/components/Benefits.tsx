@@ -23,21 +23,21 @@ export default function Benefits() {
   return (
     <section className="py-16 bg-gradient-to-br from-blue-50/80 to-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 gradient-text">היתרונות של בדיקת EMG</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">היתרונות של בדיקת EMG</h2>
         
         <div className="grid md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="glass-card p-8 rounded-xl hover-lift group"
+              className="bg-white/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="flex items-center gap-4 mb-4">
-                <div className="text-3xl">{benefit.icon}</div>
-                <h3 className="font-bold text-xl group-hover:text-primary transition-colors">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-4xl">{benefit.icon}</div>
+                <h3 className="font-bold text-xl text-blue-900">
                   {benefit.title}
                 </h3>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed">
                 {benefit.description}
               </p>
             </div>
