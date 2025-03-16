@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
-import Image from "next/image"; // Import Image component for better image handling
+ // Import Image component for better image handling
 
 export default function Header() {
   return (
@@ -22,7 +22,7 @@ export default function Header() {
               03-772-4225
             </Button>
           </a>
-          <Image 
+          <img 
             src="/certification.svg" // Replace with actual image path
             alt="Professional Certification" 
             width={50} 
