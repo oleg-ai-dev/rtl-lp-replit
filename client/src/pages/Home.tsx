@@ -21,7 +21,6 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-20 blur-2xl"></div>
                 <img
                   src="/images/EMG-General-1.jpg"
-                  className="w-full h-full object-cover rounded-2xl"
                   alt="EMG בדיקת"
                   className="rounded-2xl shadow-2xl w-full h-full object-cover relative"
                 />
