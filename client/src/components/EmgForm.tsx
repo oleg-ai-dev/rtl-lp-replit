@@ -53,7 +53,7 @@ export default function EmgForm() {
     <Form {...form}>
       <form 
         onSubmit={form.handleSubmit((data) => mutation.mutate(data))}
-        className="glass-card rounded-2xl shadow-2xl p-10 max-w-lg mx-auto border border-blue-100 relative group"
+        className="glass-card rounded-2xl shadow-2xl p-10 max-w-lg mx-auto border border-blue-100 relative group h-[600px] flex flex-col justify-between"
       >
         <div className="absolute -inset-[1px] bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-10 blur"></div>

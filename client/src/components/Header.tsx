@@ -13,6 +13,7 @@ export default function Header() {
         />
 
         <div className="flex items-center gap-4"> {/*Added div for better spacing */}
+          <h1 className="text-xl font-bold text-blue-900">בדיקת EMG</h1> {/* Added header text */}
           <a href="tel:03-772-4225">
             <Button 
               variant="secondary"
