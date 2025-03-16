@@ -12,7 +12,7 @@ export default function Header() {
           className="h-8 md:h-10"
         />
 
-        <div className="flex items-center gap-2 ml-auto"> 
+        <div className="flex flex-col items-end gap-2 ml-auto"> 
           <h1 className="text-xl md:text-2xl font-bold text-blue-900 whitespace-nowrap">בדיקת EMG</h1>
           <a href="tel:03-772-4225" className="shrink-0">
             <Button 
