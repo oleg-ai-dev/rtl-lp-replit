@@ -8,6 +8,7 @@ export default {
       animation: {
         "subtle-bounce": "subtle-bounce 4s ease-in-out infinite",
         "gradient": "gradient 8s linear infinite",
+        "text-gradient": "text-gradient 8s linear infinite",
       },
       keyframes: {
         "subtle-bounce": {
@@ -18,6 +19,10 @@ export default {
           "0%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
+        },
+        "text-gradient": {
+          "0%": { backgroundPosition: "200% 50%" },
+          "100%": { backgroundPosition: "0% 50%" }
         }
       },
       borderRadius: {

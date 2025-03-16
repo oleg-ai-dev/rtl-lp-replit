@@ -52,7 +52,7 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 animate-gradient bg-[length:200%_auto];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 bg-[length:200%_auto] motion-safe:animate-text-gradient;
   }
 
   .premium-input {
