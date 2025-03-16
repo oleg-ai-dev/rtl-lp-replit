@@ -16,8 +16,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 via-transparent to-purple-100/20"></div>
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"></div>
           <div className="container mx-auto px-4 relative">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="order-2 md:order-1 h-[600px] relative">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+              <div className="order-2 md:order-1 h-[400px] md:h-[600px] relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-20 blur-2xl"></div>
                 <img
                   src="/images/EMG-General-1.jpg"

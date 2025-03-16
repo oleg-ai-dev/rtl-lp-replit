@@ -5,15 +5,15 @@ import { Phone } from "lucide-react";
 export default function Header() {
   return (
     <header className="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center relative before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-blue-500/20 before:to-transparent">
+      <div className="container mx-auto px-4 py-4 flex flex-wrap md:flex-nowrap justify-between items-center gap-4 relative before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-blue-500/20 before:to-transparent">
         <img 
           src="/medassist-logo.svg" 
           alt="MEDASSIST" 
-          className="h-10"
+          className="h-8 md:h-10"
         />
 
-        <div className="flex items-center gap-4"> {/*Added div for better spacing */}
-          <h1 className="text-xl font-bold text-blue-900">בדיקת EMG</h1> {/* Added header text */}
+        <div className="flex items-center gap-4 ml-auto"> 
+          <h1 className="text-xl md:text-2xl font-bold text-blue-900">בדיקת EMG</h1>
           <a href="tel:03-772-4225">
             <Button 
               variant="secondary"
